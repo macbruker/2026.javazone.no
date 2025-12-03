@@ -4,10 +4,10 @@
     :root {
         --font-emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
         --font-sans: ui-sans-serif, system-ui, sans-serif, var(--font-emoji);
-        --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-      }
+        --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
             
-      html {
+    html {
         -webkit-text-size-adjust: 100%;
         font-family: var(--font-sans);
         line-height: 1.5;
@@ -17,10 +17,15 @@
     }
 
     body {
+      font-size: 1.125rem;
       margin: 0;
       min-block-size: 100%;
       display: flex;
       flex-direction: column;
+    }
+
+    h1 {
+      font-size: 3rem;
     }
 
     abbr:where([title]) {
@@ -90,17 +95,20 @@
 }
 
 @layer components {
-  :where(.header, .main, .footer, .logo) {
+  :where(.header, .footer, .logo) {
     padding: 0.5rem;
   }
+
   :where(.header, .footer) {
     background-color: hsl(45 47% 85%);
     display: flex;
     flex-wrap: wrap;
   }
+
   .header {
     box-shadow: 0 1px 3px 0 hsl(45 47% 5% / 10%), 0 1px 2px -1px hsl(45 47% 5% / 10%);
   }
+
   .nav {
     order: -1;
     display: flex;
@@ -108,19 +116,20 @@
     margin-inline-end: auto;
 
     a {
-        text-decoration: none;
-        color: currentColor;
-        padding: 0.25rem 1rem;
-        border-radius: 0.25rem;
-        font-weight: 600;
-        display: inline-flex;
-        font-size: 1.25rem;
+      display: inline-flex;
+      padding: 0.25rem 1rem;
+      border-radius: 0.25rem;
+      color: currentColor;
+      font-weight: 600;
+      font-size: 1.25rem;
+      text-decoration: none;
 
         &:hover {
-          background-color: hsl(45 32% 72%)
+            background-color: hsl(45 32% 72%)
         }
     }
   }
+
   .main {
     flex: 1;
     max-inline-size: 48rem;
