@@ -17,7 +17,7 @@
         <a href="/partner/">Partners</a>
       </nav>
     </header>
-    <main class="main">
+    <main class="main {{ 'main--home' if page.url === "/" }}">
       {{ content | safe }}
     </main>
     <footer class="footer">

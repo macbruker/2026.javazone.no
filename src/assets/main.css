@@ -125,8 +125,15 @@
     flex: 1;
     max-inline-size: 48rem;
     inline-size: stretch;
+    padding-inline: 1.375rem;
     align-self: center;
   }
+
+  .main--home {
+    align-content: center;
+    text-align: center;
+  }
+
   .footer {
     justify-content: space-around;
   }
