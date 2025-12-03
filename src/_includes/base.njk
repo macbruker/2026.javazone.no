@@ -9,26 +9,18 @@
     <link rel="stylesheet" href="/assets/main.css">
   </head>
   <body>
-    <header class="navbar bg-base-100 shadow-sm">
-      <div class="flex-1">
-        <a class="btn btn-ghost text-xl" href="/">
-          Info
-        </a>
-        <a class="btn btn-ghost text-xl" href="/history">
-          History
-        </a>
-        <a class="btn btn-ghost text-xl" href="/partner">
-          Partners
-        </a>
-      </div>
-      <div class="flex-none">
-        <h1>JavaZone</h1>
-      </div>
+    <header class="header">
+      <div class="logo">JavaZone</div>
+      <nav class="nav">
+        <a href="/">Info</a>
+        <a href="/history/">History</a>
+        <a href="/partner/">Partners</a>
+      </nav>
     </header>
-    <main>
+    <main class="main">
       {{ content | safe }}
     </main>
-    <footer class="dock dock-xs">
+    <footer class="footer">
       <a href="https://www.java.no">Made by javaBin</a>
       <a href="https://java.no/principles">Code of conduct</a>
     </footer>

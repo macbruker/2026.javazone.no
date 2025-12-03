@@ -5,30 +5,19 @@ permalink: "/history/"
 
 {% set years = [2025, 2024, 2023, 2022] %}
 
-<div class="min-h-screen bg-base-200 flex flex-col items-center py-12">
-    <div class="card w-full max-w-md bg-base-100 shadow-xl">
-        <div class="card-body">
-            <h1 class="card-title text-3xl font-bold text-primary mb-4">
-                ☕ History
-            </h1>
-            <p class="text-base-content/80 mb-4">
-                Previous JavaZone conferences:
-            </p>
+<h1>☕ History</h1>
+<p>Previous JavaZone conferences:</p>
 
-            <ul class="menu bg-base-200 rounded-box w-full">
-                {% for year in years %}
-                    <li>
-                        <a
-                            href="https://{{year}}.javazone.no"
-                            rel="noopener noreferrer"
-                            class="justify-between hover:bg-primary hover:text-primary-content"
-                        >
-                            JavaZone {{year}}
-                            <span class="badge badge-outline">Visit</span>
-                        </a>
-                    </li>
-                {% endfor %}
-            </ul>
-        </div>
-    </div>
-</div>
+<ul class="">
+    {% for year in years %}
+    <li>
+        <a
+            href="https://{{year}}.javazone.no"
+            rel="noopener noreferrer"
+            class=""
+        >
+            JavaZone {{year}}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
