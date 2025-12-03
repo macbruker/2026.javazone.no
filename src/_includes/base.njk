@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" data-theme="retro">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/javabinfaviccon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaZone 2026</title>
+    <link rel="stylesheet" href="/assets/main.css">
+  </head>
+  <body>
+    <header class="navbar bg-base-100 shadow-sm">
+      <div class="flex-1">
+        <a class="btn btn-ghost text-xl" href="/">
+          Info
+        </a>
+        <a class="btn btn-ghost text-xl" href="/history">
+          History
+        </a>
+        <a class="btn btn-ghost text-xl" href="/partner">
+          Partners
+        </a>
+      </div>
+      <div class="flex-none">
+        <h1>JavaZone</h1>
+      </div>
+    </header>
+    <main>
+      {{ content | safe }}
+    </main>
+    <footer class="dock dock-xs">
+      <a href="https://www.java.no">Made by javaBin</a>
+      <a href="https://java.no/principles">Code of conduct</a>
+    </footer>
+  </body>
+</html>
